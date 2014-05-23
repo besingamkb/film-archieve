@@ -8,6 +8,8 @@ class IndexController extends ControllerBase
     	$this->dispatcher->forward(array(
             "action" => "main"
         ));
+
+        
     }
 
     public function mainAction() {

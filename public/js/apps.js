@@ -1,15 +1,22 @@
 var myApp = angular.module('myApp', [], function($interpolateProvider) {
-    $interpolateProvider.startSymbol('[[');
+    //interpolateProvider to prevent conflict phalcon curly braces (volt syntax)
+    $interpolateProvider.startSymbol('[['); 
     $interpolateProvider.endSymbol(']]'); 
   },
   []
 );
 
-var controllers = {};
+var controllers = {}; // declare controller arrays
 
 controllers.firstcontroller = function($scope, $http) {
 
-  $scope.showData = function( ){
+
+  /*
+  * 
+  *
+  *
+  */
+  $scope.showData = function(){
 
     $scope.curPage = 0;
     $scope.pageSize = 10;

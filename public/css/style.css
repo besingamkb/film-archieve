@@ -4,6 +4,38 @@ body, html {
 	font-family: monospace;
 }
 
+button {
+	background: none;
+	border: none;
+}
+
+table {
+	border-collapse: collapse;
+	text-align: center;
+	width: 960px;
+}
+
+tr td.film_id {
+	width: 60px;
+}
+
+tr td.film_title {
+	width: 250px;
+}
+tr td.film_release_year {
+	width: 100px;
+}
+
+tr td.film_rating {
+	width: 70px;
+}
+
+tr td.film_description {
+	padding: 5px 15px 5px 15px;
+}
+
+
+
 .container, .footer {
 	width: 960px;
 	margin: 0 auto;
