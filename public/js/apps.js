@@ -33,6 +33,7 @@ controllers.firstcontroller = function($scope, $http) {
 
 myApp.controller(controllers);
 
+//create new filter
 angular.module('myApp').filter('pagination', function()
 {
  return function(input, start)
